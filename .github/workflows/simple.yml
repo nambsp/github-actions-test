@@ -1,7 +1,7 @@
-name: Run on code-default
+name: Running shell script
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   run-shell-command:
@@ -13,3 +13,9 @@ jobs:
           run: | 
             node -v
             npm -v
+        - name: python commands
+          shell: python
+          run: |
+            import platform
+            print(platform.processor())
+          
