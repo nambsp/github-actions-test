@@ -18,4 +18,11 @@ jobs:
           run: |
             import platform
             print(platform.processor())
+  
+  run-series-command:
+    runs-on: ubuntu-18.04
+    needs: ["run-shell-command"]
+    steps:
+        - name: series steps
+        - run: echo "series - hello world"
           
