@@ -13,4 +13,5 @@ jobs:
         uses: actions/hello-world-javascript-action@main
         with:
           who-to-greet: 'Prasanth Padmalayam'
-  
+      - name: 2nd step
+        run: echo "Log time - ${{ steps.greet.outputs.time }}"
