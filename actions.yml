@@ -1,0 +1,16 @@
+name: actions-test
+
+on:
+  push:  
+    branches: [ master ]
+
+jobs:
+  run-actions:
+    runs on: ubuntu-latest
+    steps:
+      - name: js-hello-action
+        id: greet
+        uses: actions/hello-world-javascript-action@main
+        with:
+          who-to-greet: 'Prasanth Padmalayam'
+  
