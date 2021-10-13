@@ -1,4 +1,4 @@
-name: actions-test
+name: actions-workflow
 
 on:
   push:  
