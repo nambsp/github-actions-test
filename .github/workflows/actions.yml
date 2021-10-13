@@ -6,7 +6,7 @@ on:
 
 jobs:
   run-actions:
-    runs on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: js-hello-action
         id: greet
