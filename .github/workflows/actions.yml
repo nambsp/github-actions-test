@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: js-hello-action
         id: greet
-        uses: actions/hello-world-javascript-action@main
+        uses: actions/hello-world-javascript-action@v1.0
         with:
           who-to-greet: 'Prasanth Padmalayam'
       - name: 2nd step
