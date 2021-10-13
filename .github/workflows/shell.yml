@@ -1,4 +1,4 @@
-name: Running shell script
+name: shell script workflow
 on:
   push:
     branches: [master]
